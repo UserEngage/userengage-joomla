@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>UserEngage</name>
+    <author>UserEngage.io</author>
+    <creationDate>2015</creationDate>
+    <authorEmail>contact@userengage.io/</authorEmail>
+    <authorUrl>https://userengage.io/</authorUrl>
+    <version>1.0.0</version>
+    <copyright>Copyright (c) 2015 UserEngage.io. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <description>
+        <![CDATA[
+        <h1>Turn Every Visitor into a Happy Customer</h1>
+        <p>REAL-TIME CUSTOMER AND USER ENGAGEMENT TOOL.<br>
+        DESIGNED FOR MAXIMIZING USER SATISFACTION.</p>
+        <br>
+        <h3>Frequently Asked Questions</h3>
+
+        <strong>I need plugin support. Where should I ask questions?</strong>
+        <ul>
+        <li>https://userengage.io/ || contact@userengage.io </li>
+        </ul>
+        ]]>
+    </description>
+    <files>
+        <filename plugin="UserEngage">UserEngage.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="Basic">
+                <field name="code"
+                       type="text"
+                       default=""
+                       label="Your Api Key:"
+                       description="Please enter your application key which has been sent to your email address. The api key is a 64 letter and number key."></field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
